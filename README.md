@@ -1,25 +1,11 @@
-# Lap-trinh-an-toan
+# Implement paper : "μVulDeePecker: A Deep Learning-BasedSystem for Multiclass Vulnerability Detection"
 
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
+
+
 <a name="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
 
 
 
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][contributors-url]
 [![Stargazers][stars-shield]][contributors-url]
@@ -80,13 +66,11 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Project Link: [https://hotel-booking-client-bice.vercel.app/](https://hotel-booking-client-bice.vercel.app/)
+This project is created to classfication 40 cwe in program c/c++, this project implement base on paper  [μVulDeePecker: A Deep Learning-Based
+System for Multiclass Vulnerability Detection](https://github.com/nguyenvuong1309/hotel_booking_client.git)
 
-Link backend : [https://hotel-booking-api-j10l.onrender.com](https://hotel-booking-api-j10l.onrender.com)
-
-Link source code backend : [https://github.com/nguyenvuong1309/booking_hotel_api](https://github.com/nguyenvuong1309/booking_hotel_api)
-
-This project being create with main purpose is to find and booking hotel, you can booking car and can sell - buy nft souvenir.
+Architect of my project.
+![image](https://github.com/nguyenvuong1309/Do-an-lap-trinh-an-toan/assets/100818110/51a482e7-93a6-45a7-b95a-2cad9c395634)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -95,14 +79,12 @@ This project being create with main purpose is to find and booking hotel, you ca
 
 ### Built With
 
+* [![Tensorflow][Tensorflow]][Tensorflow-url]
+* [![Numpy][Numpy]][Numpy-url]
+* [![Pandas][Pandas]][Pandas-url]
+* [![Matplotlib][Matplotlib]][Matplotlib-url]
+* [![Keras][Keras]][Keras-url]
 
-* [![React][React.js]][React-url]
-* [![Tailwind][Tailwind.js]][Tailwind-url]
-* [![Socketio][Socket.js]][Socketio-url]
-* [![Aws][Aws.js]][Aws-url]
-* [![Aws][Vercel.js]][Aws-url]
-* [![Aws][Render.js]][Aws-url]
-* [![Aws][Solidity.js]][Aws-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -112,12 +94,11 @@ This project being create with main purpose is to find and booking hotel, you ca
 ## Getting Started
 ### Prerequisites
 
-* node 18.0.0
-* yarn
-* install yarn if don't have yet
-  ```sh
-  npm install --global yarn
-  ```
+* python
+* tensorflow
+* numpy
+* pandas
+* seaborn
 
 ### Installation
 
@@ -125,25 +106,21 @@ This project being create with main purpose is to find and booking hotel, you ca
    ```sh
    git clone https://github.com/nguyenvuong1309/hotel_booking_client.git
    ```
-2. Install yarn packages
-   ```sh
-   yarn install
-   ```
-3. run 
-   ```sh
-   yarn dev:dev
-   ```
+2. Install all the package require.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+3. Prepare dataset and train model.
+- Download file mvd.txt.zip ( dataset ) and file label2CWE.txt ( label ) from the link https://github.com/muVulDeePecker/muVulDeePecker
+- Then run file create_text_dataset.py to create dataset .csv to train model.
+- Then run file BLSTM.ipynb to train model.
 
+4. Run deploy web app.
+- Run web app using this command.
+```s
+ streamlit run streamlit-app.py
+```
+- Then you can paste direct source code c/c++ or upload file and then using model to predict wherether the code have vulnerability or not. If yes, the program can predict which CWE.
 
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-You need create an account to booking hotel and metamask account to using nft-marketplace
-
-_Dont know how how to install create metamask account, please refer to the [How to install and create metamask account](https://fptshop.com.vn/tin-tuc/thu-thuat/cach-tai-va-dang-ky-tai-khoan-vi-metamask-148708)_
+![image](https://github.com/nguyenvuong1309/Do-an-lap-trinh-an-toan/assets/100818110/2161f56f-b22d-413d-ad0e-a95b57d84e1d)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -158,7 +135,7 @@ Nguyễn Đức Vương
 
 Email - 21522809@gm.uit.edu.vn or nguyenducvuong13092003@gmail.com
 
-Project Link: [https://hotel-booking-client-bice.vercel.app/](https://hotel-booking-client-bice.vercel.app/)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -181,26 +158,17 @@ Project Link: [https://hotel-booking-client-bice.vercel.app/](https://hotel-book
 
 
 
-[React-url]: https://reactjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[Tensorflow-url]: https://www.tensorflow.org/
+[Tensorflow]: https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white
 
+[Numpy-url]: https://numpy.org/
+[Numpy]: https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white
 
-[Tailwind-url]: https://tailwindcss.com/
-[Tailwind.js]: https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white
+[Pandas-url]: https://pandas.pydata.org/
+[Pandas]: https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white
 
-[Socketio-url]: https://socket.io/
-[Socket.js]: https://img.shields.io/badge/Socket.io-black?style=for-the-badge&logo=socket.io&badgeColor=010101
+[Matplotlib-url]: https://matplotlib.org/
+[Matplotlib]: https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black
 
-[Aws-url]: https://aws.amazon.com/
-[Aws.js]: https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white
-
-[Render-url]: https://dashboard.render.com/
-[Render.js]: https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white
-
-[Vercel-url]: https://vercel.com/
-[Vercel.js]: https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white
-
-[Solidity-url]: https://docs.soliditylang.org/
-[Solidity.js]: https://img.shields.io/badge/Solidity-%23363636.svg?style=for-the-badge&logo=solidity&logoColor=white
-
-
+[Keras-url]: https://keras.io/
+[Keras]: https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white
